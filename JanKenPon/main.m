@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         NSLog(@"Hello, World!");
         RPSController *controller = RPSController.new;
-        [controller throwDown:Scissors];
+        [controller throwDown:Paper];
     }
     return 0;
 }
