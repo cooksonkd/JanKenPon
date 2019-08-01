@@ -46,7 +46,13 @@
     return Rock;
 }
 
-- (BOOL)defeats:(RPSTurn *)turn {
-    return false;
+- (BOOL)defeats:(RPSTurn *)opponent {
+    if ((self.move == Paper && opponent.move == Rock) ||
+        (self.move == Scissors && opponent.move == Paper) ||
+        (self.move == Rock && opponent.move == Scissors)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 @end
