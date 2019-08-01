@@ -12,5 +12,9 @@
 @implementation RPSController
 - (void)throwDown:(Move)move {
     RPSTurn *playersTurn = [[RPSTurn alloc] initWithMove:move];
+    RPSTurn *computersTurn = [[RPSTurn alloc] init];
+    
+    self.game = [[RPSGame alloc] initWithFirstTurn:playersTurn
+                                        secondTurn:computersTurn];
 }
 @end
