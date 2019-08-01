@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		26DA0CD322F3263900C066BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CD222F3263900C066BC /* main.m */; };
+		26DA0CDE22F3268300C066BC /* RPSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CDC22F3268300C066BC /* RPSGame.m */; };
+		26DA0CDF22F3268300C066BC /* RPSTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CDD22F3268300C066BC /* RPSTurn.m */; };
+		26DA0CE322F3293F00C066BC /* RPSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CE222F3293F00C066BC /* RPSController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		26DA0CCF22F3263900C066BC /* JanKenPon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JanKenPon; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DA0CD222F3263900C066BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26DA0CDA22F3268300C066BC /* RPSTurn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSTurn.h; sourceTree = "<group>"; };
+		26DA0CDB22F3268300C066BC /* RPSGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSGame.h; sourceTree = "<group>"; };
+		26DA0CDC22F3268300C066BC /* RPSGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSGame.m; sourceTree = "<group>"; };
+		26DA0CDD22F3268300C066BC /* RPSTurn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSTurn.m; sourceTree = "<group>"; };
+		26DA0CE122F3293F00C066BC /* RPSController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSController.h; sourceTree = "<group>"; };
+		26DA0CE222F3293F00C066BC /* RPSController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +66,31 @@
 		26DA0CD122F3263900C066BC /* JanKenPon */ = {
 			isa = PBXGroup;
 			children = (
+				26DA0CD922F3264F00C066BC /* Model */,
+				26DA0CE022F3291C00C066BC /* Controller */,
 				26DA0CD222F3263900C066BC /* main.m */,
 			);
 			path = JanKenPon;
+			sourceTree = "<group>";
+		};
+		26DA0CD922F3264F00C066BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26DA0CDB22F3268300C066BC /* RPSGame.h */,
+				26DA0CDC22F3268300C066BC /* RPSGame.m */,
+				26DA0CDA22F3268300C066BC /* RPSTurn.h */,
+				26DA0CDD22F3268300C066BC /* RPSTurn.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26DA0CE022F3291C00C066BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26DA0CE122F3293F00C066BC /* RPSController.h */,
+				26DA0CE222F3293F00C066BC /* RPSController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				26DA0CD322F3263900C066BC /* main.m in Sources */,
+				26DA0CDE22F3268300C066BC /* RPSGame.m in Sources */,
+				26DA0CDF22F3268300C066BC /* RPSTurn.m in Sources */,
+				26DA0CE322F3293F00C066BC /* RPSController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
