@@ -7,9 +7,10 @@
 //
 
 #import "RPSController.h"
+#import "RPSTurn.h"
 
 @implementation RPSController
 - (void)throwDown:(Move)move {
-    
+    RPSTurn *playersTurn = [[RPSTurn alloc] initWithMove:move];
 }
 @end
