@@ -11,7 +11,8 @@
 typedef NS_ENUM(NSUInteger, Move) {
     Rock,
     Paper,
-    Scissors
+    Scissors,
+    Invalid
 };
 
 NS_ASSUME_NONNULL_BEGIN
