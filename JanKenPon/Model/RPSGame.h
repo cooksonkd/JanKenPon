@@ -12,11 +12,15 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RPSGame : NSObject
-@property (nonatomic) RPSTurn *firstTurn;
-@property (nonatomic) RPSTurn *secondTurn;
+@property (nonatomic) RPSTurn *playersTurn;
+@property (nonatomic) RPSTurn *computersTurn;
 
-- (instancetype)initWithFirstTurn:(RPSTurn *)firstTurn
-                      secondTurn:(RPSTurn *)secondTurn;
+- (instancetype)initWithPlayersTurn:(RPSTurn *)firstTurn
+                      computersTurn:(RPSTurn *)secondTurn;
+
+- (RPSTurn *)winner;
+
+- (RPSTurn *)loser;
 @end
 
 NS_ASSUME_NONNULL_END

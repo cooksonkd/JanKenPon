@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (Move)generateMove;
 
 - (BOOL)defeats:(RPSTurn *)turn;
+
+- (NSString *)description;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,9 +12,10 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
         RPSController *controller = RPSController.new;
         [controller throwDown:Paper];
+        
+        NSLog(@"\n%@ %@ %@\n%@", [[controller.game winner] description], @"defeats", [[controller.game loser] description] , [controller resultsString:controller.game]);
     }
     return 0;
 }

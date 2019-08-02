@@ -55,4 +55,25 @@
         return false;
     }
 }
+
+- (NSString *)description {
+    NSString *moveDescription;
+    
+    switch (self.move) {
+        case Rock:
+            moveDescription = @"Rock";
+            break;
+        case Paper:
+            moveDescription = @"Paper";
+            break;
+        case Scissors:
+            moveDescription = @"Scissors";
+            break;
+        default:
+            return @"Invalid";
+            break;
+    }
+    
+    return [NSString stringWithFormat:@"%@", moveDescription];
+}
 @end
